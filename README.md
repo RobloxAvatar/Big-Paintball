@@ -63,3 +63,7 @@ end)
 MainSection:NewButton("Unlock All Weapons", "unlocks all weapons!", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxAvatar/Big-Paintball/main/Unlock-All.lua", true))()
 end)
+
+MainSection:NewButton("Silent Aim", "opens owl hub for silent aim", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt", true))()
+end)
