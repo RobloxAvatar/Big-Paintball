@@ -57,7 +57,7 @@ MainSection:NewToggle("Gun Mod", "toggle the gun mod!", function(state)
 end)
 
 MainSection:NewButton("Esp", "gives esp!", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxAvatar/Owl-Esp/main/Readme.lua", true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxAvatar/Owl-Esp/main/README.md", true))()
 end)
 
 MainSection:NewButton("Unlock All Weapons", "unlocks all weapons!", function()
