@@ -1,3 +1,8 @@
+--[[
+    [Updated]: 1/2/22
+    [Fixed]: Aimbot Teamcheck
+]]
+
 _G.AimbotEnabled = false
 _G.CircleVisible = false
 _G.Esp = false
@@ -126,7 +131,7 @@ local TweenService = game:GetService("TweenService")
 local LocalPlayer = Players.LocalPlayer
 local Holding = false
 
-_G.TeamCheck = false
+_G.TeamCheck = true
 _G.AimPart = "Head"
 _G.Sensitivity = 0
 
