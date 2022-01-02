@@ -15,6 +15,10 @@ local MainTab = Window:NewTab("Main")
 
 local MainSection = MainTab:NewSection("Main")
 
+local LocalPlayersTab = Window:NewTab("LocalPlayer")
+
+local LocalPlayersSection = LocalPlayersTab:NewSection("LocalPlayer")
+
 oldDamage = nil
 oldFireRate = nil
 oldVelocity = nil
@@ -224,4 +228,8 @@ end)
 
 MainSection:NewButton("Unlock All Weapons", "unlocks all weapons!", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxAvatar/Big-Paintball/main/Unlock-All.lua", true))()
+end)
+
+LocalPlayersSection:NewSlider("Walkspeed", "gives you the selected amount of walkspeed!", 75, 16, function(s)
+    game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
